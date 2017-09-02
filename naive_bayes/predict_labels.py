@@ -10,7 +10,9 @@ And finally we pass a test data set to the classifier function which predicts th
 based on the training dataset(dataset used to train our modal).
 
 """
+### import the numPy module as np
 import numpy as np
+### import the sklearn module for GaussianNB
 from sklearn.naive_bayes import GaussianNB
 
 X = np.array([[-1, -1], [-2, -1], [-3, -2], [1, 1], [2, 1], [3, 2]])
