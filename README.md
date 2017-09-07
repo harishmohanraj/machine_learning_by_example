@@ -2,104 +2,49 @@
 
 
 
-Machine Learning:
+#Machine Learning:
 -	Machine learning is a sub field of artificial intelligence.
--	computers the ability to learn without being explicitly programmed
+-	By definition its the "computers the ability to learn without being explicitly programmed"
 -	Machine learning explores the study and construction of algorithms that can learn from and make predictions on data without being explicitly programmed.
--	Machine Learning is all about learning form examples and experience.
--	Learning from examples rather than writing manual rules
+-	Machine Learning is all about learning form examples and experience rather than writing manual rules
 -	One program that can solve many problems without being rewritten.
--	Regular programming:
-o	You write a lot of manual rules to solve the problem, in machine learning you let the algorithm decide for you from examples.
-o	Algorithms than learns pattern from data can solve 1000’s of different problems
+-   You write a lot of manual rules to solve the problem, in machine learning you let the algorithm decide for you from examples.
+
+###Training data and Testing data:
 -	In machine learning train your algorithm in a different dataset and test it with a different dataset.
 -	Save 10% of your data as test_dataset and train the algorithm with the remaining 90% of the data and finally test the accuracy of the algorithm with the 10% of data.
--	Always use test data for showing demo
 
-
-
-Apples and Oranges:
--	To solve this problem instead of writing lots of hand written conditions we can train a classifier which can predict the outcome.
-
+###Classifier:
 -	A classifier (eg. decision tree) is a function, it takes data(features) as input and assigns label to it as output
--	The technique to automatically write the classifier is called supervised learning
--	Supervise Learning
-o	Create a classifier by finding patterns in examples
--	Supervised learning Recipie
--
+-	The technique to automatically write the classifier is called **Supervised learning**
+
+#Supervise Learning
+o	Creating a classifier by finding patterns in examples
 o	First we will collect the training data(examples of the problem we want to solve)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Supervised Classifications:
+##Supervised Classifications:
 -	You have a bunch of examples and your know which is the rite one
 
-In machine leaning we will input features and try to get labels out of it.
+####In machine leaning we will input features and try to get labels out of it.
 Example:
--	Identifying the songs based of
-o	Features in this use case are
-♣	Intensity of the song
-♣	Tempo of the song
-♣	Genre
-♣	Gender of the voice
-o	Based of the above input the brain decides between 2 things
-♣	Like
-♣	Don’t Like
+- Identifying the songs based on Features 
+    - in this use case are
+        - Intensity of the song
+        - Tempo of the song
+        - Genre
+        - Gender of the voice
+- Based of the above input(Features) the brain decides between 2 things
+    - Like
+    - Don’t Like
 
+##Decision surface:
+Its the line separates one class from another class whether it can generalize to never before seen data point.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Decision surface:
-the line separates one class from another class whether it can generalize to never before seen data point.
-
-
-
-
-
-
-Bayse Rule:
+##Bayse Rule:
 
 In probability theory and statistics, Bayes’ theorem (alternatively Bayes’ law or Bayes' rule) describes the probability of an event, based on prior knowledge of conditions that might be related to the event. For example, if cancer is related to age, then, using Bayes’ theorem, a person’s age can be used to more accurately assess the probability that they have cancer, compared to the assessment of the probability of cancer made without knowledge of the person's age.
 
-
-
-
-Examples
+####Examples
 
 Suppose a drug test is 99% sensitive and 99% specific. That is, the test will produce 99% true positive results for drug users and 99% true negative results for non-drug users. Suppose that 0.5% of people are users of the drug. What is the probability that a randomly selected individual with a positive test is a user?
 
