@@ -34,11 +34,11 @@ class MinimalKNN():
   def predict(self, X_test):
     predictions = []
     # Our testing data is a 2 dimentional array - [[], [], []]
-    # So we have to loop through the testinf data and find the
+    # So we have to loop through the testing data and find the
     # closest matching training data point for each testing data
-    # point
+    # point and returns the lable for the matched training data
     for row in X_test:
-      # Passing each row to the closestv function
+      # Passing each row to the closest function
       # which returns the closest label
       label = self.closest(row)
       predictions.append(label)
