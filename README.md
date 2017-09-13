@@ -83,18 +83,18 @@ Example:
 
 # Decision Tree
 
-## Entropy:
+### Entropy:
     - controls how a decision tree decides where to split the data
     - by definition "measure of impurity in a bunch of examples"
     - Formula for entropy is
     - minimum value for entropy is 0 and the maximum value it can take is 1.0
-## Information gain:
+### Information gain:
     - is the (entropy of the parent) - (the weighted average of the entropy of the children)
     - the decision tree algorithm will maximize the information gain
-## Strength:
+### Strength:
     - Easy to use
     - Can be graphically interpeted
-## Weakness:
+### Weakness:
     - Prone to overfitting, specially if you have a data that's have lots and lots of features and a
     complicated decision tree it can overfit the data's
 
@@ -103,19 +103,19 @@ Example:
     algorithm that is capable of performing both regression and classification task
     - This algorithm creates a forest with a number of decision trees.
     - The more tree in the forest the more robest is the prediction and thus higher accuracy
-## How it works:
+### How it works:
     - In random forest we grow multiple tree as supposed to a single tree.
     - To classify a new object based on attributes, each tree gives a classification. The forest choses
     the classification having the most votes over all teh other trees in the forest.
     - In the case of regression the forest takes the average of the output of different trees.
-## Strength:
+### Strength:
     - Same algorithm can be used for both classification and regression tasks
     - Won't overfit the model like decision trees
     - Handles large dataset with higher dimensionality
-## Weakness:
+### Weakness:
     - Good for classification problems but not so good for regression
     - In case of regression you have very little control on what the model does.
-## Application of Ramdon Forest:
+### Application of Ramdon Forest:
     - We can use random forest algorithm in banking sector. e.g. finding loyal customers and freaud customers
     - Can be used in medicine where we identify the correct combination of components to validate medicine
     - Also help's in analysing the patients diesease based on the medical records
