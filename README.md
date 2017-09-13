@@ -1,8 +1,6 @@
 # machine_learning_by_example
 
-
-
-#Machine Learning:
+# What is Machine Learning:
 -	Machine learning is a sub field of artificial intelligence.
 -	By definition it is the "computer's the ability to learn without being explicitly programmed"
 -	Machine learning explores the study and construction of algorithms that can learn from and make predictions on data without being explicitly programmed.
