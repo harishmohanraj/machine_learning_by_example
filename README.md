@@ -81,20 +81,20 @@ Example:
 ## SVM(Support Vector Machines)
 - Puts first and foremost the correct of the labels and then maximizes the margin
 
-## Decision Tree
+# Decision Tree
 
-# Entropy:
+## Entropy:
     - controls how a decision tree decides where to split the data
     - by definition "measure of impurity in a bunch of examples"
     - Formula for entropy is
     - minimum value for entropy is 0 and the maximum value it can take is 1.0
-# Information gain:
+## Information gain:
     - is the (entropy of the parent) - (the weighted average of the entropy of the children)
     - the decision tree algorithm will maximize the information gain
-# Strength:
+## Strength:
     - Easy to use
     - Can be graphically interpeted
-# Weakness:
+## Weakness:
     - Prone to overfitting, specially if you have a data that's have lots and lots of features and a
     complicated decision tree it can overfit the data's
 
