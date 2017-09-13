@@ -63,16 +63,10 @@ Example:
 - Puts first and foremost the correct of the labels and then maximizes the margin
 
 # Decision Tree
-    - Decision Trees (DTs) are a non-parametric supervised
-      learning method used for classification and regression.
-    - The goal is to create a model that predicts the value
-      of a target variable by learning simple decision rules
-      inferred from the data features.
+    - Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression.
+    - The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
 ### Entropy:
-    - controls how a decision tree decides where to split the data
-    - by definition "measure of impurity in a bunch of examples"
-    - Formula for entropy is
-    - minimum value for entropy is 0 and the maximum value it can take is 1.0
+    - controls how a decision tree decides where to split the data by definition "measure of impurity in a bunch of examples" Formula for entropy is minimum value for entropy is 0 and the maximum value it can take is 1.0
 ### Information gain:
     - is the (entropy of the parent) - (the weighted average of the entropy of the children)
     - the decision tree algorithm will maximize the information gain
@@ -80,51 +74,30 @@ Example:
     - Easy to use
     - Can be graphically interpeted
 ### Weakness:
-    - Prone to overfitting, specially if you have a data that's have lots and lots of features and a complicated decision tree
-      it can overfit the data's
-
+    - Prone to overfitting, specially if you have a data that's have lots and lots of features and a complicated decision tree it can overfit the data's
 # Ensemble Machine learning algorithm:
-    - Ensembles are a divide and conquire approach used to
-      improve performance to improve generalizability
-      / robustness over a single estimator.
-    - The main principle behind Ensemble methods is
-      that a group of weak learner can come together
-      to form a strong learner.
-    - Each classifier is individually a weak learner
-      while the classifier taken together are a strong
-      learner and thus ensemble methods reduce inference
-      and improve performance.
+    - Ensembles are a divide and conquire approach used to improve performance to improve   generalizability / robustness over a single estimator.
+    - The main principle behind Ensemble methods is that a group of weak learner can come   together to form a strong learner.
+    - Each classifier is individually a weak learner while the classifier taken together    are a strong learner and thus ensemble methods reduce inference and improve performance.
 
 ### Two families of ensemble methods are usually distinguished:
 #### Average Methods:
     - In averaging methods, the driving principle is to build
       several estimators independently and then to average their predictions.
-      On average, the combined estimator is usually
-      better than any of the single base estimator because its
-      variance is reduced.
+      On average, the combined estimator is usually better than any of the single base estimator because its variance is reduced.
         - Examples: Bagging methods, Forests of randomized trees
 #### Boosting Methods:
-    - By contrast, in boosting methods, base estimators are
-      built sequentially and one tries to reduce the bias of
-      the combined estimator. The motivation is to combine
-      several weak models to produce a powerful ensemble.
+    - By contrast, in boosting methods, base estimators are built sequentially and one tries to reduce the bias of the combined estimator. The motivation is to combine several weak models to produce a powerful ensemble.
         - Examples: AdaBoost, Gradient Tree Boosting, …
 # Random Forests (Average Methods):
-    - Is  one of the most popular and most powerful supervised classification
-      algorithm that is capable of performing both regression and
-      classification task.
+    - Is  one of the most popular and most powerful supervised classification algorithm that is capable of performing both regression and classification task.
     - This algorithm creates a forest with a number of decision trees.
-    - The more tree in the forest the more robest is the prediction and
-      thus higher accuracy
-    - Random forest algorithm is also known as "Ensemble Machine
-      learning algorithm"
+    - The more tree in the forest the more robest is the prediction and thus higher accuracy
+    - Random forest algorithm is also known as "Ensemble Machine learning algorithm"
 ### How Random Forest algorithm works:
     - In random forest we grow multiple tree as supposed to a single tree.
-    - To classify a new object based on attributes, each tree gives a
-      classification. The forest choses the classification having the
-      most votes over all the other trees in the forest.
-    - In the case of regression the forest takes the average
-      of the output of different trees.
+    - To classify a new object based on attributes, each tree gives a classification. The forest choses the classification having the most votes over all the other trees in the forest.
+    - In the case of regression the forest takes the average of the output of different trees.
 ### Strengths:
     - Same algorithm can be used for both classification and regression tasks.
     - Won't overfit the model like decision trees
@@ -135,14 +108,9 @@ Example:
 ### Application of Ramdon Forest algorithm:
     - We can use random forest algorithm in banking sector.
         - e.g.Finding loyal customers and freaud customers
-    - Can be used in medicine where we identify the correct combination of
-      components to validate medicine
+    - Can be used in medicine where we identify the correct combination of components to validate medicine
     - Also help's in analysing the patients diesease based on the medical records
-    - In stock market random forest algorithm is used to identify the stock
-      peak behavior as well as the expected loss/profit before purchasing a
-      particular stock.
-    - In e-comerce random forest algorithm is used in small segment of the
-      recommendation engine for identifying the likelyhood of a customer
-      liking the recomended products.
-    - In computer vision the random forset algorithm is for image classification,           Microsoft used random forset algorithm in X-box in small segment.
+    - In stock market random forest algorithm is used to identify the stock peak behavior as well as the expected loss/profit before purchasing a particular stock.
+    - In e-comerce random forest algorithm is used in small segment of the recommendation engine for identifying the likelyhood of a customer liking the recomended products.
+    - In computer vision the random forset algorithm is for image classification, Microsoft used random forset algorithm in X-box in small segment.
 
