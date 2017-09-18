@@ -22,6 +22,13 @@ Example:
     - A classifier (eg. decision tree, SVM) is a function, it takes data(features) as input and assigns label
       to it as output
     - The technique to automatically write the classifier is called **Supervised learning**
+
+    ```
+    def classify(features):
+        # Do some logic
+        return label
+    ```
+
 ### Types of classifications:
     - The computer is presented with example inputs and their desired outputs, and the goal is to learn a general rule that maps inputs to outputs.
     - There are two major types of classification
