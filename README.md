@@ -23,11 +23,10 @@ Example:
       to it as output
     - The technique to automatically write the classifier is called **Supervised learning**
 
-    ```
-    def classify(features):
-        # Do some logic
-        return label
-    ```
+    ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/classifier_fun.png)
+
+### Example:
+    ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/classifier1.png)
 
 ### Types of classifications:
     - The computer is presented with example inputs and their desired outputs, and the goal is to learn a general rule that maps inputs to outputs.
@@ -84,11 +83,16 @@ Example:
 # Decision Tree
     - Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression.
     - The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
+
+    ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/decision_tree.png)
 ### Entropy in Decision Tree:
     - controls how a decision tree decides where to split the data by definition "measure of impurity in a bunch of examples" Formula for entropy is minimum value for entropy is 0 and the maximum value it can take is 1.0
+
+    ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/entropy.png)
 ### Information gain in Decision Tree:
     - is the (entropy of the parent) - (the weighted average of the entropy of the children)
     - the decision tree algorithm will maximize the information gain
+    ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/information-gain.png)
 ### Strength:
     - Easy to use
     - Can be graphically interpeted
