@@ -34,7 +34,7 @@ Example:
         - Unsupervised classification
             - No labels are given to the learning algorithm, leaving it on its own to find structure in its input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a means towards an end (feature learning).
 # Supervised classification
-    - The computer is presented with example inputs and their desired outputs, given by a “teacher”, and the goal is to learn a general rule that maps inputs to outputs.
+    - The computer is presented with example inputs and their desired outputs, and the goal is to learn a general rule that maps inputs to outputs.
 
 ### ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/supervised_learning.png)
 ### Types in supervised classifications:
@@ -57,7 +57,7 @@ Example:
     1) Classification
     2) Regression
 
-### Classification VS Regression
+### Classification vs Regression
     - Classification: Discrete valued Y (e.g. 1,2,3 and 4)
     - Regression: Continues Values Y (e.g. 222.6, 300, 568,…)
     - Whenever you find machine learning problem first define whether you are dealing with a classification or regression problem and you can get to know that analyzing the target variable (Y), note that here the input X can of any kind (continues or discrete) that doesn’t count to define the problem. After defining the problem and getting to know the data it’s much easier to chose or try out some algorithms.
