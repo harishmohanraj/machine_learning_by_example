@@ -36,6 +36,8 @@ Example:
             - No labels are given to the learning algorithm, leaving it on its own to find structure in its input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a means towards an end (feature learning).
 # Supervised classification
     - The computer is presented with example inputs and their desired outputs, given by a “teacher”, and the goal is to learn a general rule that maps inputs to outputs.
+
+    ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/supervised_learning.png)
 ### Types in supervised classifications:
     - In classification problems we are trying to predict a discrete number of values.
         - The labels(y) generally comes in categorical form and represents a finite number of classes. Consider the tasks bellow:
