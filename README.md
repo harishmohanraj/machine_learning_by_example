@@ -5,27 +5,8 @@
     - Machine learning explores the study and construction of algorithms that can learn from and make
       predictions on data without being explicitly programmed.
     - Machine Learning is all about learning form examples and experience rather than writing manual rules
-    - One program that can solve many problems without being rewritten.
-    - You write a lot of manual rules to solve the problem, in machine learning you let the algorithm decide
+        - E.g. You write a lot of manual rules to solve the problem, in machine learning you let the algorithm decide
       for you from examples.
-
-### Training data and Testing data:
-    - In machine learning train your algorithm in a different dataset and test it with a different dataset.
-    - Save 10% of your data as test_dataset and train the algorithm with the remaining 90% of the data and
-      finally test the accuracy of the algorithm with the 10% of data.
-
-### Classifier:
-    - A classifier (eg. decision tree) is a function, it takes data(features) as input and assigns label
-      to it as output
-    - The technique to automatically write the classifier is called **Supervised learning**
-
-# Supervise Learning
-    - Creating a classifier by finding patterns in examples
-    - First we will collect the training data(examples of the problem we want to solve)
-
-## Supervised Classifications:
-    - You have a bunch of examples and your know which is the rite one
-
 #### In machine leaning we will input features and try to get labels out of it.
 Example:
 - Identifying the songs based on Features
@@ -38,9 +19,43 @@ Example:
     - Like
     - Don’t Like
 
-## Decision surface:
-    - Its the line separates one class from another class whether it can generalize to never before
-    seen data point.
+# Classification:
+
+### Classifier:
+    - A classifier (eg. decision tree, SVM) is a function, it takes data(features) as input and assigns label
+      to it as output
+    - The technique to automatically write the classifier is called **Supervised learning**
+### Types of classifications:
+    There are two major types of classification
+        1) Supervised classification
+        2) Non Supervised classification
+# Supervise classification
+    - Creating a classifier by finding patterns in examples
+    - First we will collect the training data(examples of the problem we want to solve)
+### Types in supervised classifications:
+    - In classification problems we are trying to predict a discrete number of values.
+        - The labels(y) generally comes in categorical form and represents a finite number of classes. Consider the tasks bellow:
+            - Given set of input features predict whether a Breast Cancer is Benign or Malignant.
+            - Given an image correctly classify as containing Cats or Dogs.
+            - From a given email predict whether it’s spam email or not.
+        - Types of classification
+            (1) Binary classification — when there is only two classes to predict, usually 1 or 0 values.
+            (2) Multi-Class Classification — When there are more than two class labels to predict we call multi-classification task. E.g. predicting 3 types of iris species, image classification problems where there are more than thousands classes(cat, dog, fish, car,…).
+
+###Algorithms for classification
+    - Decision Trees
+    - Naive Bayes
+    - K Nearest Neighbors
+    - SVM's
+    - etc
+### Supervised classification is of two types
+    1) Classification
+    2) Regression
+
+### Classification VS Regression
+    - Classification: Discrete valued Y (e.g. 1,2,3 and 4)
+    - Regression: Continues Values Y (e.g. 222.6, 300, 568,…)
+    - Whenever you find machine learning problem first define whether you are dealing with a classification or regression problem and you can get to know that analyzing the target variable (Y), note that here the input X can of any kind (continues or discrete) that doesn’t count to define the problem. After defining the problem and getting to know the data it’s much easier to chose or try out some algorithms.
 
 ## Bayse Rule:
 
@@ -65,9 +80,9 @@ Example:
 # Decision Tree
     - Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression.
     - The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
-### Entropy:
+### Entropy in Decision Tree:
     - controls how a decision tree decides where to split the data by definition "measure of impurity in a bunch of examples" Formula for entropy is minimum value for entropy is 0 and the maximum value it can take is 1.0
-### Information gain:
+### Information gain in Decision Tree:
     - is the (entropy of the parent) - (the weighted average of the entropy of the children)
     - the decision tree algorithm will maximize the information gain
 ### Strength:
@@ -114,3 +129,20 @@ Example:
     - In e-comerce random forest algorithm is used in small segment of the recommendation engine for identifying the likelyhood of a customer liking the recomended products.
     - In computer vision the random forset algorithm is for image classification, Microsoft used random forset algorithm in X-box in small segment.
 
+# Regression:
+    - In regression problems we trying to predict continues valued output, take this example. Given a size of the house predict the price(real value).
+###Regression Algorithms
+    - Linear Regression
+    - Regression Trees(e.g. Random Forest)
+    - Support Vector Regression (SVR)
+    etc
+### Slope and Intercept:
+    - In the equation y= m(x) + c
+        - x is the value of x axis
+        - y is the value of y axis
+        - m is the value of slope
+        - c is the intercept
+### Popular Linear regression algorithms:
+    - Ordinary Least squares (OLS)
+        -Used in sklean linear regression
+    - Gradient Descent
