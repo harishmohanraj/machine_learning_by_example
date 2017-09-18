@@ -23,9 +23,9 @@ Example:
       to it as output
     - The technique to automatically write the classifier is called **Supervised learning**
 
-# ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/classifier_fun.png)
+### ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/classifier_fun.png)
 
-# ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/classifier1.png)
+### ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/classifier1.png)
 
 ### Types of classifications:
     - The computer is presented with example inputs and their desired outputs, and the goal is to learn a general rule that maps inputs to outputs.
@@ -36,7 +36,7 @@ Example:
 # Supervised classification
     - The computer is presented with example inputs and their desired outputs, given by a “teacher”, and the goal is to learn a general rule that maps inputs to outputs.
 
-# ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/supervised_learning.png)
+### ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/supervised_learning.png)
 ### Types in supervised classifications:
     - In classification problems we are trying to predict a discrete number of values.
         - The labels(y) generally comes in categorical form and represents a finite number of classes. Consider the tasks bellow:
@@ -85,16 +85,16 @@ Example:
     - Decision Trees (DTs) are a non-parametric supervised learning method used for classification and regression.
     - The goal is to create a model that predicts the value of a target variable by learning simple decision rules inferred from the data features.
 
-# ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/decision_tree.png)
+### ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/decision_tree.png)
 ### Entropy in Decision Tree:
     - controls how a decision tree decides where to split the data by definition "measure of impurity in a bunch of examples" Formula for entropy is minimum value for entropy is 0 and the maximum value it can take is 1.0
 
-# ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/entropy.png)
+### ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/entropy.png)
 ### Information gain in Decision Tree:
     - is the (entropy of the parent) - (the weighted average of the entropy of the children)
     - the decision tree algorithm will maximize the information gain
 
-# ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/information-gain.png)
+### ![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/information-gain.png)
 ### Strength:
     - Easy to use
     - Can be graphically interpeted
