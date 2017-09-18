@@ -71,7 +71,6 @@ Example:
 
 ## Naive Bayes Weaknesses:
 
-
 ## SVM(Support Vector Machines)
 - Puts first and foremost the correct of the labels and then maximizes the margin
 
@@ -144,3 +143,6 @@ Example:
     - Ordinary Least squares (OLS)
         -Used in sklean linear regression
     - Gradient Descent
+# Algorithm Cheat sheet:
+
+![alt text](https://github.com/harishuideveloper/machine_learning_by_example/readme_assets/cheat-sheet.png)
