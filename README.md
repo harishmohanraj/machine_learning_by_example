@@ -145,4 +145,4 @@ Example:
     - Gradient Descent
 # Algorithm Cheat sheet:
 
-![alt text](https://github.com/harishuideveloper/machine_learning_by_example/readme_assets/cheat-sheet.png)
+![alt text](https://github.com/harishuideveloper/machine_learning_by_example/blob/master/readme_assets/cheat-sheet.png)
