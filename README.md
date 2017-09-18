@@ -1,5 +1,5 @@
 # Machine Learning by Example:
-# What is Machine Learning:
+# Machine Learning:
     - Machine learning is a sub field of artificial intelligence.
     - By definition it is the "computer's the ability to learn without being explicitly programmed"
     - Machine learning explores the study and construction of algorithms that can learn from and make
@@ -9,40 +9,38 @@
       for you from examples.
 #### In machine leaning we will input features and try to get labels out of it.
 Example:
-- Identifying the songs based on Features
-    - in this use case are
+- Identifying the songs based on Features in this usecase the features can be
         - Intensity of the song
         - Tempo of the song
         - Genre
         - Gender of the voice
-- Based of the above input(Features) the brain decides between 2 things
+- Based of the above input(Features) the machine learning algorithm(classifier) decides between 2 things
     - Like
     - Don’t Like
-
-# Classification:
 
 ### Classifier:
     - A classifier (eg. decision tree, SVM) is a function, it takes data(features) as input and assigns label
       to it as output
     - The technique to automatically write the classifier is called **Supervised learning**
 ### Types of classifications:
-    There are two major types of classification
-        1) Supervised classification
-        2) Non Supervised classification
-# Supervise classification
-    - Creating a classifier by finding patterns in examples
-    - First we will collect the training data(examples of the problem we want to solve)
+    - The computer is presented with example inputs and their desired outputs, and the goal is to learn a general rule that maps inputs to outputs.
+    - There are two major types of classification
+        - Supervised classification
+        - Unsupervised classification
+            - No labels are given to the learning algorithm, leaving it on its own to find structure in its input. Unsupervised learning can be a goal in itself (discovering hidden patterns in data) or a means towards an end (feature learning).
+# Supervised classification
+    - The computer is presented with example inputs and their desired outputs, given by a “teacher”, and the goal is to learn a general rule that maps inputs to outputs.
 ### Types in supervised classifications:
     - In classification problems we are trying to predict a discrete number of values.
         - The labels(y) generally comes in categorical form and represents a finite number of classes. Consider the tasks bellow:
             - Given set of input features predict whether a Breast Cancer is Benign or Malignant.
             - Given an image correctly classify as containing Cats or Dogs.
             - From a given email predict whether it’s spam email or not.
-        - Types of classification
-            (1) Binary classification — when there is only two classes to predict, usually 1 or 0 values.
-            (2) Multi-Class Classification — When there are more than two class labels to predict we call multi-classification task. E.g. predicting 3 types of iris species, image classification problems where there are more than thousands classes(cat, dog, fish, car,…).
+### Types of classification
+    - Binary classification — when there is only two classes to predict, usually 1 or 0 values.
+    - Multi-Class Classification — When there are more than two class labels to predict we call multi-classification task. E.g. predicting 3 types of iris species, image classification problems where there are more than thousands classes(cat, dog, fish, car,…).
 
-###Algorithms for classification
+###Algorithms used for classification
     - Decision Trees
     - Naive Bayes
     - K Nearest Neighbors
