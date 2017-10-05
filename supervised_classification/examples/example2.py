@@ -32,9 +32,9 @@ testing_features = feature_format(input_list[7:10], 'test')
 
 from sklearn import svm
 
-#clf = svm.SVC(kernel='rbf', C=10000.0)
-#clf.fit(training_features, training_labels)
-#pred = clf.predict(testing_features)
-#print(training_features)
+clf = svm.SVC(kernel='rbf', C=10000.0)
+clf.fit(training_features, training_labels)
+pred = clf.predict(testing_features)
+print(pred)
 
 
