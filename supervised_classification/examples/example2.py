@@ -12,7 +12,11 @@ def feature_format(dataset, set_name):
   if set_name=="train":
     for index, item in enumerate(dataset):
       labels.append(item.split(" ")[1])
-      features.append(item.split(" ")[2:])
+      item_feature = item.split(" ")[2:]
+      features.append([re.sub(r"^(.*?):", "", y) for y in item_feature])
+    for index, list_item in enumerate(features):
+      for pos, item in enumerate(list_item):
+        features[index][pos] = float(item)
     return features, labels
   else:
     for index, item in enumerate(dataset):
@@ -25,7 +29,6 @@ def feature_format(dataset, set_name):
 
 training_features, training_labels = feature_format(input_list[1:6], 'train')
 testing_features = feature_format(input_list[7:10], 'test')
-print(testing_features)
 
 from sklearn import svm
 
