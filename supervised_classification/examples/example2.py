@@ -1,4 +1,5 @@
 import re
+
 input_list = []
 with open('./dataset.txt','r') as f:
   for line in f:
@@ -27,14 +28,16 @@ def feature_format(dataset, set_name):
         features[index][pos] = float(item)
     return features
 
-training_features, training_labels = feature_format(input_list[1:6], 'train')
-testing_features = feature_format(input_list[7:10], 'test')
+training_features, training_labels = feature_format(input_list[1:int(N)+1], 'train')
+testing_features = feature_format(input_list[int(N)+1:][1:], 'test')
 
-from sklearn import svm
 
-clf = svm.SVC(kernel='rbf', C=10000.0)
+
+from sklearn.tree import tree
+clf = tree.DecisionTreeClassifier(min_samples_split=40)
 clf.fit(training_features, training_labels)
 pred = clf.predict(testing_features)
-print(pred)
 
 
+for i, j in enumerate(input_list[int(N)+1:][1:]):
+  print(j.split(" ")[0]+" "+ pred[i])
