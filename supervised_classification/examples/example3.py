@@ -31,14 +31,29 @@ for index, item in enumerate(data_list):
   features_list.append(item[:2])
   labels_list.append(item[2:])
 
+from sklearn.cross_validation import train_test_split
+features_train, features_test, labels_train, labels_test = train_test_split(features_list, labels_list, test_size=0.30, random_state=42)
+
 # converting 2d list into 1d list
-features_list = np.array(sum(features_list, []))
+features_train = np.array(sum(features_train, []))
+features_test = np.array(sum(features_test, []))
 
 from sklearn.feature_extraction.text import CountVectorizer
 vectorizer = CountVectorizer()
-X = vectorizer.fit_transform(features_list)
-print X.shape
+features_train_extracted = vectorizer.fit_transform(features_train)
 
-#from sklearn.cross_validation import train_test_split
-#features_train, features_test, labels_train, labels_test = train_test_split(features_list, labels_list, test_size=0.30, random_state=42)
+features_train_extracted = features_train_extracted.todense()
+
+print features_train_extracted.shape
+print len(labels_train)
+
+#from sklearn.naive_bayes import GaussianNB
+#clf = GaussianNB()
+#clf.fit(features_train_extracted, labels_train)
+#predictions = clf.predict(features_test)
+
+#from sklearn.metrics import accuracy_score
+#acc = accuracy_score(predicted, labels_test)
+#print acc
+
 
